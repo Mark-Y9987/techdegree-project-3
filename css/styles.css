@@ -1,0 +1,83 @@
+* {
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  background: #d0d0d0;
+}
+
+main {
+  background: white;
+}
+
+header {
+  background: #454545;
+  color: white;
+  margin: auto;
+  text-align: center;
+  padding: 24px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+h1,
+legend {
+  font-size: 18px;
+  padding-left: 0;
+}
+
+
+
+h1,
+h2,
+p {
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+hr {
+  max-width: 95%;
+  height: 2px;
+  background-color: black;
+}
+
+::placeholder {
+  text-align: right;
+  font-style: italic;
+  padding: 16px;
+  font-size: 16px;
+}
+
+form input[type=text] {
+  width: 90%;
+  height: 48px;
+  border-radius: 5px;
+  margin: 12px 0;
+  background-color: #e3e3e3;
+}
+
+fieldset {
+  border: none;
+}
+
+#first_hr {
+  height: 6px;
+}
+
+.contact_fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.form-group #zip_code {
+  width: 50%;
+}
+
+.form-label {
+  text-align: left;
+  padding: 12px 0;
+}
