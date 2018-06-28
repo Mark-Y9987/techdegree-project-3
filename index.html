@@ -21,7 +21,7 @@
       <div class="contact-fields">
         <fieldset>
           <legend>Contact Information</legend>
-          <form action="" method="post" id="form">
+          <form action="#" method="post" id="form">
             <div class="input-group">
               <label for="name" class="form-label">Full Name</label>
               <input required type="text" name="user_name" id="name" placeholder="Required">
@@ -44,7 +44,7 @@
             </div>
             <div class="input-group">
               <label for="state" class="form-label">State</label>
-              <select name="user_state" id="state" placeholder="State">
+              <select name="user_state" id="state">
             <option value="0" class="select">Choose State:</option>
           	<option value="AL">Alabama</option>
           	<option value="AK">Alaska</option>
@@ -112,26 +112,26 @@
           <legend>Newsletter</legend>
           <p id="newsletter-select">Select newsletters you would like to recieve</p>
           <div class="check-radio">
-            <input type="checkbox" name="html_news" value="html">
+            <input type="checkbox" name="html_news" id="html_news" value="html">
             <label for="html_news">HTML News</label><br>
           </div>
           <div class="check-radio">
-            <input type="checkbox" name="css_news" value="css">
+            <input type="checkbox" name="css_news" id="css_news" value="css">
             <label for="css_news">CSS News</label><br>
           </div>
           <div class="check-radio">
-            <input type="checkbox" name="javascript_news" value="javascript">
+            <input type="checkbox" name="javascript_news" id="javascript_news" value="javascript">
             <label for="javascript_news">Javascript News</label><br>
           </div>
         </fieldset>
         <fieldset>
           <legend>Newsletter Format</legend>
           <div class="check-radio">
-            <input type="radio" name="html_format" value="html_selection">
+            <input type="radio" name="html_format" id="html" value="html_selection">
             <label for="html">HTML</label>
           </div>
           <div class="check-radio">
-            <input type="radio" name="plain_text_format" value="plain_text_selection">
+            <input type="radio" name="plain_text_format" id="plain_text" value="plain_text_selection">
             <label for="plain_text">Plain Text</label>
           </div>
         </fieldset>
