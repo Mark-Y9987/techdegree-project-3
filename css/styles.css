@@ -85,9 +85,10 @@ input[type=text] {
 
 input[type=checkbox],
 input[type=radio] {
-  width: 15px;
+  max-width: 30px;
   height: 15px;
-  flex: 1;
+  flex: 0.5;
+  padding: 0;
 }
 
 form input[type=text]:focus, textarea:focus, select:focus, button:focus {
