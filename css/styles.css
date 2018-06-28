@@ -83,6 +83,13 @@ input[type=text] {
   padding: 0 12px;
 }
 
+input[type=checkbox],
+input[type=radio] {
+  width: 15px;
+  height: 15px;
+  flex: 1;
+}
+
 form input[type=text]:focus, textarea:focus, select:focus, button:focus {
   outline: none !important;
   background: white;
@@ -155,7 +162,12 @@ footer {
 }
 
 .check-radio {
+  display: flex;
   padding: 8px 0;
+}
+
+.sel-label {
+  flex: 3;
 }
 
 ::placeholder {
