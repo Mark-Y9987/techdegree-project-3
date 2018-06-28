@@ -13,26 +13,38 @@
 <body>
   <header>The Code Review</header>
   <main>
-    <h1>Signup for our newsletter</h1>
-    <p>Get the latest news on how your code is doing right in your inbox</p>
-    <hr id="first_hr">
-    <hr>
-    <div class="contact-fields">
-      <fieldset>
-        <legend>Contact Information</legend>
-        <form action="" method="post">
-          <label for="name" class="form-label">Full Name</label>
-          <input required type="text" name="user_name" id="name" placeholder="Required">
-          <label for="email" class="form-label">Email Address</label>
-          <input required type="text" name="user_email" id="email" placeholder="Required">
-          <label for="phone_number" class="form-label">Phone Number</label>
-          <input type="text" name="user_phone_number" id="phone_number">
-          <label for="street_address" class="form-label">Street Address</label>
-          <input type="text" name="user_street_address" id="street_address">
-          <label for="city" class="form-label">City</label>
-          <input type="text" name="user_city" id="city">
-          <label for="state" class="form-label">State</label>
-          <select name="user_state" id="state">
+    <div class="main-content">
+      <h1>Signup for our newsletter</h1>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
+      <hr id="first_hr">
+      <hr>
+      <div class="contact-fields">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <form action="" method="post" id="form">
+            <div class="input-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input required type="text" name="user_name" id="name" placeholder="Required">
+            </div>
+            <div class="input-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input required type="text" name="user_email" id="email" placeholder="Required">
+            </div>
+            <div class="input-group">
+              <label for="phone_number" class="form-label">Phone Number</label>
+              <input type="text" name="user_phone_number" id="phone_number" placeholder="Phone Number">
+            </div>
+            <div class="input-group">
+              <label for="street_address" class="form-label">Street Address</label>
+              <input type="text" name="user_street_address" id="street_address" placeholder="Street">
+            </div>
+            <div class="input-group">
+              <label for="city" class="form-label">City</label>
+              <input type="text" name="user_city" id="city" placeholder="City">
+            </div>
+            <div class="input-group">
+              <label for="state" class="form-label">State</label>
+              <select name="user_state" id="state" placeholder="State">
             <option value="0" class="select">Choose State:</option>
           	<option value="AL">Alabama</option>
           	<option value="AK">Alaska</option>
@@ -86,47 +98,51 @@
           	<option value="WI">Wisconsin</option>
           	<option value="WY">Wyoming</option>
           </select>
-          <label for="zip_code" class="form-label">Zip Code</label>
-          <input type="text" name="user_zip_code" id="zip_code">
-        </form>
-      </fieldset>
+            </div>
+            <div class="input-group">
+              <label for="zip_code" class="form-label" id="zip-label">Zip Code</label>
+              <input type="text" name="user_zip_code" id="zip_code" placeholder="Zip Code">
+            </div>
+          </form>
+        </fieldset>
+      </div>
+      <hr>
+      <div>
+        <fieldset>
+          <legend>Newsletter</legend>
+          <p id="newsletter-select">Select newsletters you would like to recieve</p>
+          <div class="check-radio">
+            <input type="checkbox" name="html_news" value="html">
+            <label for="html_news">HTML News</label><br>
+          </div>
+          <div class="check-radio">
+            <input type="checkbox" name="css_news" value="css">
+            <label for="css_news">CSS News</label><br>
+          </div>
+          <div class="check-radio">
+            <input type="checkbox" name="javascript_news" value="javascript">
+            <label for="javascript_news">Javascript News</label><br>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Newsletter Format</legend>
+          <div class="check-radio">
+            <input type="radio" name="html_format" value="html_selection">
+            <label for="html">HTML</label>
+          </div>
+          <div class="check-radio">
+            <input type="radio" name="plain_text_format" value="plain_text_selection">
+            <label for="plain_text">Plain Text</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label for="user_topics">Other topics you'd like to hear about</label>
+          <textarea name="user_topics" id="user_topics"></textarea>
+          <button type="submit" form="form">Sign Up</button>
+        </fieldset>
+      </div>
+      <footer>Copyright The Code Review</footer>
     </div>
-    <hr>
-    <div>
-      <fieldset>
-        <legend>Newsletter</legend>
-        <p id="newsletter-select">Select newsletters you would like to recieve</p>
-        <div class="check-radio">
-        <input type="checkbox" name="html_news" value="html">
-        <label for="html_news">HTML News</label><br>
-      </div>
-      <div class="check-radio">
-        <input type="checkbox" name="css_news" value="css">
-        <label for="css_news">CSS News</label><br>
-      </div>
-      <div class="check-radio">
-        <input type="checkbox" name="javascript_news" value="javascript">
-        <label for="javascript_news">Javascript News</label><br>
-      </div>
-      </fieldset>
-      <fieldset>
-        <legend>Newsletter Format</legend>
-        <div class="check-radio">
-        <input type="radio" name="html_format" value="html_selection">
-        <label for="html">HTML</label>
-      </div>
-      <div class="check-radio">
-        <input type="radio" name="plain_text_format" value="plain_text_selection">
-        <label for="plain_text">Plain Text</label>
-      </div>
-      </fieldset>
-      <fieldset>
-        <label for="user_topics">Other topics you'd like to hear about</label>
-        <textarea name="user_topics" id="user_topics"></textarea>
-        <button type="submit">Sign Up</button>
-      </fieldset>
-    </div>
-    <footer>Copyright The Code Review</footer>
   </main>
 
 </body>

@@ -9,11 +9,11 @@ body {
 }
 
 main {
-  background: white;
+  background: #f0f6f7;
 }
 
 header {
-  background: #454545;
+  background: #0c86a7;
   color: white;
   margin: auto;
   text-align: center;
@@ -28,21 +28,16 @@ fieldset {
   width: 85%;
 }
 
-
-h1,
-legend {
+h1, legend {
   font-size: 18px;
   padding-left: 0;
 }
 
-p,
-label {
+p, label {
   color: #969696;
 }
 
-
-h1,
-h2 {
+h1, h2 {
   text-align: center;
   margin: 0;
   padding: 16px;
@@ -51,7 +46,7 @@ h2 {
 p {
   text-align: center;
   margin: 0;
-  padding:0 0 12px 0;
+  padding: 0 0 12px 0;
 }
 
 hr {
@@ -71,7 +66,6 @@ textarea {
   padding: 0;
 }
 
-
 form input {
   width: 90%;
   height: 48px;
@@ -79,24 +73,24 @@ form input {
   border: none;
   margin: auto;
   background-color: #e3e3e3;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
 }
 
 input[type=text] {
   padding: 0 12px;
 }
 
-form input[type=text]:focus,
-textarea:focus,
-select:focus,
-button:focus {
+form input[type=text]:focus, textarea:focus, select:focus, button:focus {
   outline: none !important;
+  background: white;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 1px 0px 1px 3px;
+  margin: 1px 1px 1px 0px;
   border: 3px solid #53c8be;
 }
-
-button:active {
-  background: #e3e3e3;
-}
-
 
 select {
   width: 93%;
@@ -117,6 +111,10 @@ button {
   border-radius: 5px;
   font-size: 18px;
   color: white;
+}
+
+button:active {
+  background: #e3e3e3;
 }
 
 footer {
@@ -167,11 +165,35 @@ footer {
   font-size: 16px;
 }
 
-
 /* Media Queries */
 
 @media (min-width: 768px) {
-
-
-
-}
+  main {
+    max-width: 75%;
+    margin: auto;
+  }
+  header {
+    max-width: 75%;
+    padding: 24px 0;
+  }
+  form {
+    flex-direction: row;
+  }
+  label {
+    flex: 1;
+  }
+  input, #state {
+    flex: 3;
+  }
+  .main-content {
+    max-width: 70%;
+    margin: auto;
+  }
+  .input-group {
+    display: flex;
+    padding: 12px;
+  }
+  #zip-label {
+    max-width: 25%;
+  }
+} 
