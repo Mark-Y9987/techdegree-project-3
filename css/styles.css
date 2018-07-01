@@ -207,6 +207,13 @@ footer {
     padding: 12px;
   }
   #zip-label {
-    max-width: 25%;
+    max-width: 24%;
+  }
+
+  #zip_code {
+    flex: 0;
+    width: 100px;
+    margin-left: 0;
+    padding-left: 0;
   }
 }
